@@ -1,0 +1,13 @@
+{
+  "name": "data-workflow",
+  "version": "0.1.0",
+  "description": "A data workflow for Claude Code: SQL review across dialects, pandas and numpy, ETL and medallion architecture, Databricks and Spark, Power BI (DAX, Power Query), dashboard design, and data quality, under an always-on data contract.",
+  "author": {
+    "name": "Mid Analytical",
+    "url": "https://github.com/analyticalmid"
+  },
+  "homepage": "https://github.com/analyticalmid/data-workflow",
+  "repository": "https://github.com/analyticalmid/data-workflow",
+  "license": "MIT",
+  "keywords": ["data", "sql", "etl", "pandas", "spark", "databricks", "power-bi", "dax", "dashboard", "data-quality"]
+}

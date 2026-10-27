@@ -1,0 +1,16 @@
+{
+  "name": "data-workflow",
+  "description": "A data workflow for Claude Code, from the query to the dashboard.",
+  "owner": {
+    "name": "Mid Analytical",
+    "url": "https://github.com/analyticalmid"
+  },
+  "plugins": [
+    {
+      "name": "data-workflow",
+      "description": "SQL review, pandas, ETL and medallion, Databricks and Spark, Power BI, dashboard design, and data quality under an always-on data contract.",
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}
