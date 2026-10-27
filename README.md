@@ -32,6 +32,8 @@ disagree.
 | `sql` skill | Review, verify, and fix queries: correctness (fan-out, NULL, grain, windows, time), performance from the plan, safety. References for PostgreSQL, T-SQL (SQL Server, Azure SQL, Fabric), Spark SQL / Databricks, BigQuery, and Snowflake |
 | `/data-workflow:sql-review` | Runs that review on a query, a file, an object, or the SQL in the current diff, and verifies the fix against the original |
 | `sql-reviewer` agent | Read-only second reviewer for long queries, migrations, and statements that write |
+| `python-data` skill | pandas and numpy: lean loading, missing data, validated merges, vectorization and memory, dates and time zones, reshaping, reconciliation; references for pandas 3 and NumPy 2 changes |
+| `/data-workflow:data-profile` | Profiles a file, a DataFrame, or a warehouse table: per-column stats, suspicious values, candidate keys and grain, freshness, personal data flagged |
 
 Skills, commands, and reviewers land release by release; this table lists what is in the current one.
 
