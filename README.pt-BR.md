@@ -35,6 +35,10 @@ repositório se somam a ele e vencem quando discordam.
 | Agente `sql-reviewer` | Segundo revisor, só de leitura, para queries longas, migrations e comandos que escrevem |
 | Skill `python-data` | pandas e numpy: carga enxuta, dados faltantes, merges validados, vetorização e memória, datas e fusos, reshape, reconciliação; referências das mudanças do pandas 3 e do NumPy 2 |
 | `/data-workflow:data-profile` | Faz o perfil de um arquivo, DataFrame ou tabela do warehouse: estatísticas por coluna, valores suspeitos, chaves candidatas e granularidade, frescor, dados pessoais sinalizados |
+| Skill `etl-pipelines` | Extração (APIs, watermarks, CDC, arquivos, streams), cargas idempotentes e backfills, dbt incremental, orquestração; referências de medalhão e armazenamento (lake, warehouse, lakehouse, Delta, Iceberg, Parquet) e de modelagem dimensional (granularidade, fatos, SCD) |
+| Skill `data-quality` | Quais testes escrever e o que uma falha faz (falhar, avisar, quarentena) em dbt, Lakeflow, Snowflake ou Great Expectations; dados pessoais sob LGPD e GDPR, prazos de incidente e mascaramento por plataforma |
+| `/data-workflow:pipeline` | Desenha ou revisa um pipeline de ponta a ponta: saídas, fontes, camadas, cargas idempotentes, backfills, testes, agenda, dados pessoais |
+| Agente `data-model-reviewer` | Revisão só de leitura de granularidade, chaves, SCD, cargas, backfills, testes e dados pessoais num modelo ou pipeline |
 
 Skills, comandos e revisores entram a cada release; esta tabela lista o que já está na atual.
 
