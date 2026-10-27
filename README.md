@@ -37,6 +37,7 @@ disagree.
 | `etl-pipelines` skill | Extraction (APIs, watermarks, CDC, files, streams), idempotent loads and backfills, dbt incremental, orchestration; references for medallion and storage (lake, warehouse, lakehouse, Delta, Iceberg, Parquet) and dimensional modeling (grain, facts, SCD) |
 | `data-quality` skill | Which tests to write and what a failure does (fail, warn, quarantine) in dbt, Lakeflow, Snowflake, or Great Expectations; personal data under LGPD and GDPR, incident deadlines, and masking per platform |
 | `/data-workflow:pipeline` | Designs or reviews a pipeline end to end: outputs, sources, layers, idempotent loads, backfills, tests, schedule, personal data |
+| `databricks-spark` skill | Spark execution and shuffles, built-ins vs UDFs, partitions and skew, caching, Delta layout (partitioning thresholds, OPTIMIZE, VACUUM, deletion vectors), Unity Catalog, compute and cost, Lakeflow Jobs and pipelines, bundles, secrets, Structured Streaming, PySpark tests |
 | `data-model-reviewer` agent | Read-only review of grain, keys, SCD, loads, backfills, tests, and personal data in a model or pipeline |
 
 Skills, commands, and reviewers land release by release; this table lists what is in the current one.

@@ -38,6 +38,7 @@ repositório se somam a ele e vencem quando discordam.
 | Skill `etl-pipelines` | Extração (APIs, watermarks, CDC, arquivos, streams), cargas idempotentes e backfills, dbt incremental, orquestração; referências de medalhão e armazenamento (lake, warehouse, lakehouse, Delta, Iceberg, Parquet) e de modelagem dimensional (granularidade, fatos, SCD) |
 | Skill `data-quality` | Quais testes escrever e o que uma falha faz (falhar, avisar, quarentena) em dbt, Lakeflow, Snowflake ou Great Expectations; dados pessoais sob LGPD e GDPR, prazos de incidente e mascaramento por plataforma |
 | `/data-workflow:pipeline` | Desenha ou revisa um pipeline de ponta a ponta: saídas, fontes, camadas, cargas idempotentes, backfills, testes, agenda, dados pessoais |
+| Skill `databricks-spark` | Execução e shuffles do Spark, funções nativas vs UDFs, partições e skew, cache, layout Delta (limites de particionamento, OPTIMIZE, VACUUM, deletion vectors), Unity Catalog, compute e custo, Lakeflow Jobs e pipelines, bundles, secrets, Structured Streaming, testes de PySpark |
 | Agente `data-model-reviewer` | Revisão só de leitura de granularidade, chaves, SCD, cargas, backfills, testes e dados pessoais num modelo ou pipeline |
 
 Skills, comandos e revisores entram a cada release; esta tabela lista o que já está na atual.
