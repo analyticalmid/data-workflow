@@ -29,6 +29,9 @@ disagree.
 | Piece | What it does |
 | --- | --- |
 | Contract | The always-on rules above, printed at session start |
+| `sql` skill | Review, verify, and fix queries: correctness (fan-out, NULL, grain, windows, time), performance from the plan, safety. References for PostgreSQL, T-SQL (SQL Server, Azure SQL, Fabric), Spark SQL / Databricks, BigQuery, and Snowflake |
+| `/data-workflow:sql-review` | Runs that review on a query, a file, an object, or the SQL in the current diff, and verifies the fix against the original |
+| `sql-reviewer` agent | Read-only second reviewer for long queries, migrations, and statements that write |
 
 Skills, commands, and reviewers land release by release; this table lists what is in the current one.
 

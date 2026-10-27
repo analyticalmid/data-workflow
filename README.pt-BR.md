@@ -30,6 +30,9 @@ repositório se somam a ele e vencem quando discordam.
 | Peça | O que faz |
 | --- | --- |
 | Contrato | As regras acima, sempre ativas, impressas no início da sessão |
+| Skill `sql` | Revisa, verifica e corrige queries: corretude (fan-out, NULL, granularidade, janelas, tempo), performance pelo plano e segurança. Referências para PostgreSQL, T-SQL (SQL Server, Azure SQL, Fabric), Spark SQL / Databricks, BigQuery e Snowflake |
+| `/data-workflow:sql-review` | Roda essa revisão numa query, num arquivo, num objeto ou no SQL do diff atual, e verifica a correção contra a original |
+| Agente `sql-reviewer` | Segundo revisor, só de leitura, para queries longas, migrations e comandos que escrevem |
 
 Skills, comandos e revisores entram a cada release; esta tabela lista o que já está na atual.
 
