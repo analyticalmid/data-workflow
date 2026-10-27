@@ -39,6 +39,9 @@ repositório se somam a ele e vencem quando discordam.
 | Skill `data-quality` | Quais testes escrever e o que uma falha faz (falhar, avisar, quarentena) em dbt, Lakeflow, Snowflake ou Great Expectations; dados pessoais sob LGPD e GDPR, prazos de incidente e mascaramento por plataforma |
 | `/data-workflow:pipeline` | Desenha ou revisa um pipeline de ponta a ponta: saídas, fontes, camadas, cargas idempotentes, backfills, testes, agenda, dados pessoais |
 | Skill `databricks-spark` | Execução e shuffles do Spark, funções nativas vs UDFs, partições e skew, cache, layout Delta (limites de particionamento, OPTIMIZE, VACUUM, deletion vectors), Unity Catalog, compute e custo, Lakeflow Jobs e pipelines, bundles, secrets, Structured Streaming, testes de PySpark |
+| Skill `power-bi` | Modelo estrela, direção de filtro, muitos-para-muitos, tabela de datas, modos de armazenamento (Import, DirectQuery, Dual, Direct Lake), RLS, memória do VertiPaq; referências de DAX (contextos, CALCULATE, DIVIDE, variáveis, inteligência de tempo, formatação) e Power Query M (folding, staging, atualização incremental, privacidade, erros) |
+| Skill `dashboard-design` | Leitor e decisões primeiro, KPIs com comparação, layout por importância e celular primeiro, gráfico por pergunta, contraste WCAG e cor nunca sozinha, segmentações e drill, performance da página, acessibilidade e layout mobile do Power BI |
+| `/data-workflow:dashboard` | Transforma uma necessidade de negócio numa especificação de dashboard pronta para construir (perguntas, dicionário de KPIs com DAX, wireframes, interação, paleta, dados necessários), ou critica um relatório existente |
 | Agente `data-model-reviewer` | Revisão só de leitura de granularidade, chaves, SCD, cargas, backfills, testes e dados pessoais num modelo ou pipeline |
 
 Skills, comandos e revisores entram a cada release; esta tabela lista o que já está na atual.

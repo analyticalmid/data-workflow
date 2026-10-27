@@ -38,6 +38,9 @@ disagree.
 | `data-quality` skill | Which tests to write and what a failure does (fail, warn, quarantine) in dbt, Lakeflow, Snowflake, or Great Expectations; personal data under LGPD and GDPR, incident deadlines, and masking per platform |
 | `/data-workflow:pipeline` | Designs or reviews a pipeline end to end: outputs, sources, layers, idempotent loads, backfills, tests, schedule, personal data |
 | `databricks-spark` skill | Spark execution and shuffles, built-ins vs UDFs, partitions and skew, caching, Delta layout (partitioning thresholds, OPTIMIZE, VACUUM, deletion vectors), Unity Catalog, compute and cost, Lakeflow Jobs and pipelines, bundles, secrets, Structured Streaming, PySpark tests |
+| `power-bi` skill | Star schema, filter direction, many-to-many, date tables, storage modes (Import, DirectQuery, Dual, Direct Lake), RLS, VertiPaq memory; references for DAX (contexts, CALCULATE, DIVIDE, variables, time intelligence, formatting) and Power Query M (folding, staging, incremental refresh, privacy, errors) |
+| `dashboard-design` skill | Reader and decisions first, KPIs with comparisons, layout by importance and phone first, chart per question, WCAG contrast and color not alone, slicers and drill, page performance, Power BI accessibility and mobile layout |
+| `/data-workflow:dashboard` | Turns a business need into a buildable dashboard spec (questions, KPI dictionary with DAX, wireframes, interaction, palette, data needs), or critiques an existing report |
 | `data-model-reviewer` agent | Read-only review of grain, keys, SCD, loads, backfills, tests, and personal data in a model or pipeline |
 
 Skills, commands, and reviewers land release by release; this table lists what is in the current one.
