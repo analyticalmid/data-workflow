@@ -20,9 +20,9 @@ Dentro de uma sessão: `/plugin marketplace add analyticalmid/data-workflow` e d
 
 ## O contrato
 
-Toda sessão começa com o [`contract.md`](contract.md): leitura por padrão, aprovação antes de qualquer
-comando que altere dados num alvo compartilhado, granularidade declarada antes de todo join, toda
-transformação reconciliada, credenciais e dados pessoais fora do output. As instruções do próprio
+Toda sessão começa com o [`contract.md`](contract.md): carregar a skill do assunto antes de responder, leitura por
+padrão, aprovação antes de qualquer comando que altere dados num alvo compartilhado, granularidade declarada antes de
+todo join, toda transformação reconciliada, credenciais e dados pessoais fora do output. As instruções do próprio
 repositório se somam a ele e vencem quando discordam.
 
 ## O que vem no plugin
@@ -44,7 +44,27 @@ repositório se somam a ele e vencem quando discordam.
 | `/data-workflow:dashboard` | Transforma uma necessidade de negócio numa especificação de dashboard pronta para construir (perguntas, dicionário de KPIs com DAX, wireframes, interação, paleta, dados necessários), ou critica um relatório existente |
 | Agente `data-model-reviewer` | Revisão só de leitura de granularidade, chaves, SCD, cargas, backfills, testes e dados pessoais num modelo ou pipeline |
 
-Skills, comandos e revisores entram a cada release; esta tabela lista o que já está na atual.
+Cada fato numa skill vem da documentação do fornecedor e traz o link, para ser conferido na versão que você usa.
+
+## Evals
+
+A pasta `evals/` tem um caso por área, rodados com `claude plugin eval .` na raiz do repositório. Cada caso dá ao agente
+uma tarefa realista com problemas plantados, e um juiz (LLM) confere se a resposta encontra e corrige cada um; quando o
+caso nomeia uma skill, um segundo grader confere se ela foi carregada.
+
+Resultados da v0.1.0 (uma rodada por caso, Claude Code 2.1.311):
+
+| Caso | Com o plugin | Sem |
+| --- | --- | --- |
+| `sql-fanout` | 1,00 | 0,00 |
+| `pandas-merge`, `pandas-3-upgrade`, `pandas-method` | 1,00 | 1,00 |
+| `etl-idempotency`, `quality-tests` | 1,00 | 1,00 |
+| `spark-job` | 1,00 | 1,00 |
+| `dax-measures`, `dashboard-spec` | 1,00 | 1,00 |
+
+O caso de SQL é o que o modelo base erra sozinho. Nos outros, o modelo atual já responde bem; os casos ficam como teste
+de regressão, e as skills garantem que o método (granularidade primeiro, reconciliação, verificação) não dependa da
+rodada.
 
 ## Licença
 

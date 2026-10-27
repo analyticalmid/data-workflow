@@ -19,10 +19,10 @@ Inside a session: `/plugin marketplace add analyticalmid/data-workflow`, then
 
 ## The contract
 
-Every session starts with [`contract.md`](contract.md): read by default, a go-ahead before any statement that
-changes data on a shared target, grain stated before every join, every transformation reconciled, credentials
-and personal data kept out of the output. The repository's own instructions add to it and win where they
-disagree.
+Every session starts with [`contract.md`](contract.md): load the matching skill before answering, read by default,
+a go-ahead before any statement that changes data on a shared target, grain stated before every join, every
+transformation reconciled, credentials and personal data kept out of the output. The repository's own instructions
+add to it and win where they disagree.
 
 ## What ships
 
@@ -43,7 +43,28 @@ disagree.
 | `/data-workflow:dashboard` | Turns a business need into a buildable dashboard spec (questions, KPI dictionary with DAX, wireframes, interaction, palette, data needs), or critiques an existing report |
 | `data-model-reviewer` agent | Read-only review of grain, keys, SCD, loads, backfills, tests, and personal data in a model or pipeline |
 
-Skills, commands, and reviewers land release by release; this table lists what is in the current one.
+Every fact in a skill comes from the vendor's documentation and carries its link, so it can be checked against the
+version you run.
+
+## Evals
+
+The `evals/` folder holds one case per area, run with `claude plugin eval .` from the repository root. Each case gives
+the agent a realistic task with planted problems, and an LLM judge checks that the answer finds and fixes them; where
+a case names a skill, a second grader checks that the skill was loaded.
+
+Results for v0.1.0 (one run per case, Claude Code 2.1.311):
+
+| Case | With the plugin | Without |
+| --- | --- | --- |
+| `sql-fanout` | 1.00 | 0.00 |
+| `pandas-merge`, `pandas-3-upgrade`, `pandas-method` | 1.00 | 1.00 |
+| `etl-idempotency`, `quality-tests` | 1.00 | 1.00 |
+| `spark-job` | 1.00 | 1.00 |
+| `dax-measures`, `dashboard-spec` | 1.00 | 1.00 |
+
+The SQL case is the one the base model fails alone. On the others the current model already answers well; the cases
+stay as regression checks, and the skills keep the method (grain first, reconciliation, verification) from depending on
+the run.
 
 ## License
 

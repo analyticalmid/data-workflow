@@ -3,6 +3,19 @@
 Always-on rules for data work in this session: queries, pipelines, notebooks, models, and dashboards. The
 repository's own instructions add to them and win where they disagree.
 
+**Load the skill before the answer.** Data work starts by invoking the matching `data-workflow` skill, even when
+the answer seems known, because each skill carries the checks and the verification the answer needs:
+
+- SQL in any dialect → `sql`
+- pandas or numpy → `python-data`
+- a load, ingestion, DAG, dbt model, or storage layout → `etl-pipelines`
+- tests or personal data → `data-quality`
+- Spark or Databricks → `databricks-spark`
+- Power BI, DAX, or Power Query → `power-bi`
+- a dashboard or report layout → `dashboard-design`
+
+Several match → load each.
+
 ## Hard lines
 
 - **Read by default.** A statement that changes data or schema on a shared or production target (`INSERT`,
